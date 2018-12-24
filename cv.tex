@@ -22,24 +22,50 @@
  
 \documentclass{resume} % Use the custom resume.cls style 
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 \usepackage[left=0.3 in,top=0.15 in,right=0.3 in,bottom=0.3in]{geometry} % Document margins
+\usepackage{ragged2e}
 \usepackage[spanish]{babel}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 
+\hypersetup{
+    colorlinks = true,
+    linkbordercolor = [rgb]{1,1,1},
+    linkcolor = [rgb]{0,0,0.5},
+    anchorcolor = [rgb]{0,0,0.5},
+    citecolor = [rgb]{0,0,0.5},
+    filecolor = [rgb]{0,0,0.5},
+    urlcolor = [rgb]{0,0,0.5}}
+
 \name{Iván Vallés Pérez} % Your name 
-\address{\textbf{phone}: (34) 638 392 209 \\ 
-         \textbf{email}: ivanvallesperez@gmail.com\ \\ 
-         \textbf{skype}:\ ivallesp\ \\
-         \textbf{addr.}: C/Ibiza\ 13, BA, 28009, Madrid }
-         
-\address{\textbf{github}: \url{github.com/ivallesp}   \\ 
-        \textbf{kaggle}: \url{kaggle.com/ivallesp} \ \\ 
-        \textbf{webpage}: \url{www.uv.es/ivape3}}
+
+
 
 
 \begin{document}  
+
+\vspace{-20pt}
+
+\begin{Center}
+        {\textbf{phone}: (34) 638 392 209 - 
+        \textbf{email}: \href{mailto:ivanvallesperez@gmail.com}{ivanvallesperez@gmail.com} -
+         \textbf{skype}:\ ivallesp -
+         \textbf{addr.}: C/Ibiza\ 13, BA, 28009, Madrid }
+\end{Center}
+
+\vspace{-6pt}
+
+\begin{Center}
+        \textbf{github}: \href{https://www.github.com/ivallesp}{github.com/ivallesp}   -  \textbf{kaggle}: \href{https://www.kaggle.com/ivallesp}{kaggle.com/ivallesp}  -  \textbf{webpage}: \href{https://www.uv.es/~ivape3}{www.uv.es/ivape3}
+\end{Center}
+
+\vspace{-5pt}
+
+  
+      
+
 \begin{rSection}{Profile}
 Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforcement Learning at the University of Valencia. Proactive and with a clear vocation for the Artificial Intelligence field. Currently Living in Madrid (Spain).
 \end{rSection}
@@ -94,28 +120,6 @@ Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforceme
 
 
 %------------------------------
-%	EDUCATION SECTION
-%------------------------------
-
-\begin{rSection}{Academic History}
-{\textbf{PhD. in Deep Reinforcement Learning}, University of Valencia, Spain} \hfill {2018-Present}
-\\
-{\textbf{M.Sc. Languages and Computer Science Systems (NLP)}, UNED, Spain} \hfill {2016-2018}
-\\
-{\textbf{B.Eng. Electronics of Telecommunications}, University of Valencia, Spain} \hfill {2009-2013}
-\end{rSection}
-
-\begin{rSection}{Further Education}
-{\textbf{Deep Reinforcement Learning Nanodegree}, Udacity} \hfill {2018}\\
-{\textbf{Practical Reinforcement Learning}, National Research University Higher School of Economics, Coursera} \hfill {2018}\\
-{\textbf{Deep Learning Specialization}, Andrew Ng, Coursera} \hfill {2018}\\
-{\textbf{Neural Networks and Machine Learning}, Geoffrey Hinton, Coursera \hfill {2017}}\\
-{\textbf{Neural Networks and Deep Learning}, ASDM: Universidad Politécnica de Madrid \hfill {2016}}\\
-{... more than 30 MOOC and online courses from Coursera, EdX, Udacity and Stanford Lagunita}
-\end{rSection}
-
-
-%------------------------------
 %	PROJECTS SECTION
 %------------------------------
 
@@ -128,7 +132,7 @@ Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforceme
 
 \item Empirical study about generating free text using Generative Adversarial Networks.
 \item The algorithm was able to generate free text by combining a seq2seq and convolutional architecture with GP-GANs.
-\item Link to the thesis: \url{https://www.uv.es/ivape3/memoria\_tfm.pdf}
+\item Link to the thesis: \url{https://www.uv.es/ivape3/memoria_tfm.pdf}
 
 \end{rSubsection}
 
@@ -140,7 +144,7 @@ Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforceme
 \vspace{-3pt}
 
 \item Development of the Genetic ELM deep learning algorithm consisting of using Genetic Algorithms as an alternative method to backpropagation to train shallow neural networks.
-\item Link to the thesis: \url{https://www.uv.es/ivape3/memoria\_pfc.pdf}
+\item Link to the thesis: \url{https://www.uv.es/ivape3/memoria_pfc.pdf}
 
 \end{rSubsection}
 
@@ -180,6 +184,29 @@ Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforceme
 
 \end{rSection} 
 
+
+%------------------------------
+%	EDUCATION SECTION
+%------------------------------
+
+\begin{rSection}{Academic History}
+{\textbf{PhD. in Deep Reinforcement Learning}, University of Valencia, Spain} \hfill {2018-Present}
+\\
+{\textbf{M.Sc. Languages and Computer Science Systems (NLP)}, UNED, Spain} \hfill {2016-2018}
+\\
+{\textbf{B.Eng. Electronics of Telecommunications}, University of Valencia, Spain} \hfill {2009-2013}
+\end{rSection}
+
+\begin{rSection}{Further Education}
+{\textbf{Deep Reinforcement Learning Nanodegree}, Udacity} \hfill {2018}\\
+{\textbf{Practical Reinforcement Learning}, National Research University Higher School of Economics, Coursera} \hfill {2018}\\
+{\textbf{Deep Learning Specialization}, Andrew Ng, Coursera} \hfill {2018}\\
+{\textbf{Neural Networks and Machine Learning}, Geoffrey Hinton, Coursera \hfill {2017}}\\
+{\textbf{Neural Networks and Deep Learning}, ASDM: Universidad Politécnica de Madrid \hfill {2016}}\\
+{... more than 30 MOOC and online courses from Coursera, EdX, Udacity and Stanford Lagunita}
+\end{rSection}
+
+
 %------------------------------
 %	JOURNAL PAPERS SECTION
 %------------------------------
@@ -198,7 +225,8 @@ Senior Data Scientist in McKinsey \& Company and PhD student in Deep Reinforceme
 %------------------------------
 \begin{rSection}{Skills} \itemsep -3pt  
 {\textbf{Programming languages}: Python (w/ Pytorch and Tensorflow), R, Matlab, C++ }  \\
-{\textbf{Big Data:} Apache Spark, SQL, Redis, Amazon Web Services, Google Cloud } 
+{\textbf{Big Data:} Apache Spark, SQL, Redis, Amazon Web Services, Google Cloud } \\
+{\textbf{Languages:} Native Spanish and Catalan. Advanced in English.}
 \end{rSection}  
  
 \vspace{\fill}
