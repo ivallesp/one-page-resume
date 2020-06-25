@@ -27,7 +27,7 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{xcolor}
 
-\definecolor{rsectioncolor}{rgb}{0, 0, 0.5}
+\definecolor{rsectioncolor}{rgb}{0.1, 0.2835, 0.5296}
 
 \pagestyle{empty} % Suppress page numbers
 
