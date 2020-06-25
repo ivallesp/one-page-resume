@@ -101,7 +101,7 @@
 
   \textbf{\color{rsectioncolor}{\MakeUppercase{#1}}} % Section title
   \sectionlineskip
-  \hrule % Horizontal line
+  \hrule height 0.1pt  % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
