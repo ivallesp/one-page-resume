@@ -25,6 +25,9 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{xcolor}
+
+\definecolor{rsectioncolor}{rgb}{0, 0, 0.5}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -67,7 +70,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{\color{rsectioncolor}{\MakeUppercase{\namesize\bf \@name}}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -94,8 +97,10 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
+  
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+
+  \textbf{\color{rsectioncolor}{\MakeUppercase{#1}}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
