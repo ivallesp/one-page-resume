@@ -70,7 +70,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\color{rsectioncolor}{\MakeUppercase{\namesize\bf \@name}}}\hfil
+    {\color{rsectioncolor}{\MakeUppercase{\namesize\bf \@name}}}
     \nameskip\break
   \endgroup
 }
@@ -82,7 +82,6 @@
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
-  \printname % Print the name specified with \name
   \@ifundefined{@addressone}{}{ % Print the first address if specified
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
