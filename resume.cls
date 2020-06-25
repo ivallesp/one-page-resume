@@ -69,9 +69,9 @@
 
 % \printname is used to print the name as a page header
 \def \printname {
+
   \begingroup
     {\color{rsectioncolor}{\MakeUppercase{\namesize\bf \@name}}}
-    \nameskip\break
   \endgroup
 }
 
